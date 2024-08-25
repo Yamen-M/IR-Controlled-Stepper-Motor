@@ -33,38 +33,43 @@ Arduino IDE
 
 # How to Use:
 
-Step 1: Decode IR Remote Commands
+<b>Step 1: Decode IR Remote Commands</b>
 
-Plug the Arduino Uno into your PC or laptop.
-Open the Arduino IDE and navigate to File > Open > IRDecode.ino (located in this repository).
-Upload the IRDecode.ino code to the Arduino Uno.
-Open the Serial Monitor by navigating to Tools > Serial Monitor or by pressing Ctrl + Shift + M (Windows) or Cmd + Shift + M (Mac).
-Point the IR remote at the IR receiver module and press a button. The Serial Monitor will display the decoded IR command.
-Take note of the IR commands for each button press (e.g. UP, DOWN, STOP).
-Step 2: Configure the Main Code
+- Plug the Arduino Uno into your PC or laptop.
+- Open the Arduino IDE and navigate to File > Open > IRDecode.ino (located in this repository).
+- Upload the IRDecode.ino code to the Arduino Uno.
+- Open the Serial Monitor by navigating to Tools > Serial Monitor or by pressing Ctrl + Shift + M (Windows) or Cmd + Shift + M (Mac).
+- Point the IR remote at the IR receiver module and press a button. The Serial Monitor will display the decoded IR command.
+- Take note of the IR commands for each button press (e.g. UP, DOWN, STOP).
 
-Open the Main.ino file (located in this repository) in the Arduino IDE.
-Edit the switch statements in the loop function to match the IR commands you decoded in Step 1.
-Save the changes to the Main.ino file.
-Step 3: Connect the Hardware
+<b>Step 2: Configure the Main Code</b>
 
-Connect the A4988 Driver to the Arduino Uno.
-Connect the NEMA 17 Stepper Motor to the A4988 Driver.
-Plug in the 12VDC power supply to the A4988.
-Connect the IR receiver module to the Arduino Uno.
-Step 4: Upload the Main Code
+- Open the Main.ino file (located in this repository) in the Arduino IDE.
+- Edit the switch statements in the loop function to match the IR commands you decoded in Step 1.
+- Save the changes to the Main.ino file.
 
-Upload the modified Main.ino code to the Arduino Uno.
-Open the Serial Monitor to verify that the code is working correctly.
-Step 5: Control the Stepper Motor
+<b>Step 3: Connect the Hardware</b>
 
-Use the IR remote control to control the Stepper Motor.
-Press the UP or DOWN button to move the motor infinitely.
-Press the STOP button to stop the motor.
-License:
+- Connect the A4988 Driver to the Arduino Uno.
+- Connect the NEMA 17 Stepper Motor to the A4988 Driver.
+- Plug in the 12VDC power supply to the A4988.
+- Connect the IR receiver module to the Arduino Uno.
 
-This project is licensed under the MIT License.
+<b>Step 4: Upload the Main Code</b>
 
-Contributing:
+- Upload the modified Main.ino code to the Arduino Uno.
+- Open the Serial Monitor to verify that the code is working correctly.
+
+<b>Step 5: Control the Stepper Motor</b>
+
+- Use the IR remote control to control the Stepper Motor.
+- Press the UP or DOWN button to move the motor infinitely.
+- Press the STOP button to stop the motor.
+
+<b>License:</b>
+
+This project is licensed under the <b>MIT License</b>.
+
+<b>Contributing:</b>
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
