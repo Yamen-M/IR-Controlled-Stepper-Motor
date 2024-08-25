@@ -68,7 +68,7 @@ Arduino IDE
 
 <b>License:</b>
 
-This project is licensed under the <b>MIT License</b>.
+This project is licensed under <b>MIT License</b>.
 
 <b>Contributing:</b>
 
