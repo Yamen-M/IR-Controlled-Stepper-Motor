@@ -97,6 +97,7 @@ Welcome to the IR-Controlled-Stepper-Motor project! This project demonstrates ho
 <b>IRremote:</b>
 - Incase the remote commands are not being called by the switch statement, try adding 0x before each command code. For example, if command is 24, try writing (<b>case 0x24:</b>) instead of (<b>case 24:</b>) in switch statement.
 - Check that the IR receiver module is properly connected to the Arduino and that the IRremote library is installed.
+
 <b>StepperMotor:</b>
 - If the motor doesn't move, check that the A4988 driver is properly connected to the Arduino and the stepper motor.
 # <b>License:</b>
