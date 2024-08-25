@@ -34,6 +34,12 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 - Arduino IDE
 
 # How to Use:
+<b>Full Simulation of the project using wokwi.com including wiring diagram: https://wokwi.com/projects/406950093561627649</b>
+
+
+![IRreceiver Diagram](https://github.com/user-attachments/assets/cd1220ac-9341-439c-ba80-b3cd6a22c397)
+
+
 
 <b>Step 1: Decode IR Remote Commands</b>
 
@@ -52,8 +58,15 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 
 <b>Step 3: Connect the Hardware</b>
 
+![image](https://github.com/user-attachments/assets/30299db1-4f40-42d2-b5b5-ad22748f94a7)
+
+
+<h1>WARNING!: IT IS IMPORTANT TO SET THE CURRENT LIMIT THAT ALIGNS WITH YOUR STEPPER MOTOR. FOLLOW THE LINK BELOW TO FIND DIFFERENT METHODS TO DO SO. </h1>
+
+- <b>Link: https://lastminuteengineers.com/a4988-stepper-motor-driver-arduino-tutorial/</b>
 - Connect the A4988 Driver to the Arduino Uno.
 - Connect the NEMA 17 Stepper Motor to the A4988 Driver.
+- <b>(WARNING: Do not unplug the motor while the A4988 driver is on as it could damage the driver. Unplug all power sources then unplug the motor if needed!)</b>
 - Plug in the 12VDC power supply to the A4988.
 - Connect the IR receiver module to the Arduino Uno.
 
