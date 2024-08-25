@@ -1,10 +1,6 @@
 # IR-Controlled-Stepper-Motor
 
-Stepper Motor Control with IR Remote
-
-Control a NEMA 17 Stepper Motor using an IR remote control!
-
-This project demonstrates how to control a NEMA 17 Stepper Motor (or other) using an IR remote control. The project uses Arduino Uno to read IR signals from an IR remote control using IRremote library and translate them into motor control commands using the AccelStepper library.
+Welcome to the IR-Controlled-Stepper-Motor project! This project demonstrates how to control a NEMA 17 Stepper Motor (or other) using an IR remote control, allowing for wireless control of the motor's speed and direction.
 
 # Features:
 
@@ -31,7 +27,8 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
   
 # Software Requirements:
 
-- Arduino IDE
+- PC/Laptop running Windows, Mac, or Linux.
+- Latest version of the Arduino IDE. (https://www.arduino.cc/en/software)
 
 # How to Use:
 <b>Full Simulation of the project using wokwi.com including wiring diagram: https://wokwi.com/projects/406950093561627649</b>
@@ -45,7 +42,14 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 
 - Plug the Arduino Uno into your PC or laptop.
 - Open the Arduino IDE and navigate to File > Open > IRDecode.ino (located in this repository).
+- Remember to install the IRremote library in the Arduino IDE:
+    - Go to Sketch > Include Library > Manage Libraries
+    - Search for "IRremote" and install the latest version
+    - Restart the Arduino IDE
 - Upload the IRDecode.ino code to the Arduino Uno.
+
+<b>Finding IR remote commands: </b>
+
 - Open the Serial Monitor by navigating to Tools > Serial Monitor or by pressing Ctrl + Shift + M (Windows) or Cmd + Shift + M (Mac).
 - Point the IR remote at the IR receiver module and press a button. The Serial Monitor will display the decoded IR command.
 - Take note of the IR commands for each button press (e.g. UP, DOWN, STOP).
@@ -53,6 +57,10 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 <b>Step 2: Configure the Main Code</b>
 
 - Open the Main.ino file (located in this repository) in the Arduino IDE.
+- Remember to install the AccelStepper library in the Arduino IDE:
+    - Go to Sketch > Include Library > Manage Libraries
+    - Search for "AccelStepper" and install the latest version. (The AccelStepper library is used to control the stepper motor's speed and direction. It provides an easy-to-use interface for controlling the motor's acceleration, deceleration, and movement.)
+    - Restart the Arduino IDE
 - Edit the switch statements in the loop function to match the IR commands you decoded in Step 1.
 - Save the changes to the Main.ino file.
 
@@ -79,8 +87,18 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 
 - Use the IR remote control to control the Stepper Motor.
 - Press the UP or DOWN button to move the motor infinitely.
-- Press the STOP button to stop the motor.
+- Press the RIGHT Button to increase speed.
+- Press the LEFT Button to decrease speed.
+- Press the MIDDLE button to stop the motor.
 
+- Buttons mentioned above depend on the remote used and commands set in the switch statement in STEP 1.
+
+# <b>Troubleshooting</b>
+<b>IRremote:</b>
+- Incase the remote commands are not being called by the switch statement, try adding 0x before each command code. For example, if command is 24, try writing (<b>case 0x24:</b>) instead of (<b>case 24:</b>) in switch statement.
+- Check that the IR receiver module is properly connected to the Arduino and that the IRremote library is installed.
+<b>StepperMotor:</b>
+- If the motor doesn't move, check that the A4988 driver is properly connected to the Arduino and the stepper motor.
 # <b>License:</b>
 
 This project is licensed under <b>MIT License</b>.
