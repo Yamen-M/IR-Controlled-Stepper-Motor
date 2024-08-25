@@ -8,28 +8,30 @@ This project demonstrates how to control a NEMA 17 Stepper Motor (or other) usin
 
 # Features:
 
-Control a NEMA 17 Stepper Motor using an IR remote control
-Adjustable speed
-Direction control
-ReturnHome function, allows the motor to return to initial position at the beginning of the code execution
-Details: When the UP or DOWN button on the IR remote is pressed, the motor keeps moving infinitely until the STOP button is pressed.
+- Control a NEMA 17 Stepper Motor using an IR remote control
+- Adjustable speed
+- Direction control
+- ReturnHome function, allows the motor to return to initial position at the beginning of the code execution
+  
+<b>Details:</b> When the UP or DOWN button on the IR remote is pressed, the motor keeps moving infinitely until the STOP button is pressed.
 
-Usage example: Curtain control. By designing extra parts (3D printing) this project allows for fully wireless control of the curtain using the IR remote.
+<b>Usage example:</b> Curtain control. By designing extra parts (3D printing) this project allows for fully wireless control of the curtain using the IR remote.
 
 # Hardware Requirements:
 
-NEMA 17 Stepper Motor (or other)
-A4988 Driver
-IR receiver module
-IR remote
-Arduino Uno
-Jumper wires
-Power Supply for the Arduino (Minimum 5V)
-Power supply for the motor (Minimum 12VDC)
-100uf capacitor
-Software Requirements:
+- NEMA 17 Stepper Motor (or other)
+- A4988 Driver
+- IR receiver module
+- IR remote
+- Arduino Uno
+- Jumper wires
+- Power Supply for the Arduino (Minimum 5V)
+- Power supply for the motor (Minimum 12VDC)
+- 100uf capacitor
+  
+# Software Requirements:
 
-Arduino IDE
+- Arduino IDE
 
 # How to Use:
 
