@@ -66,10 +66,10 @@ Arduino IDE
 - Press the UP or DOWN button to move the motor infinitely.
 - Press the STOP button to stop the motor.
 
-<b>License:</b>
+# <b>License:</b>
 
 This project is licensed under <b>MIT License</b>.
 
-<b>Contributing:</b>
+# <b>Contributing:</b>
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
